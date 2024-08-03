@@ -1,0 +1,13 @@
+dump/
+node_modules/
+test/
+.git/
+
+Dockerfile
+package-lock.json
+yarn.lock
+.env
+.env.example
+.gitignore
+.eslintrc.js
+.editorconfig

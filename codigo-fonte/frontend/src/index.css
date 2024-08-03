@@ -1,0 +1,95 @@
+/* Arquivo de resetar e definir CSS base. NÃO APAGAR */
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/*
+What do we do for browsers that don't support rem units? 
+We can specify the fall-back using px,  if you don't mind users of 
+older versions of Internet Explorer still being unable to resize the text 
+(well, there's still page zoom in IE7 and IE8). To do so, we specify the 
+font-size using px units first and then define it again using rem units.
+
+html { font-size: 62.5%; } 
+body { font-size: 14px; font-size: 1.4rem; } 1.4rem = 14px 
+h1   { font-size: 24px; font-size: 2.4rem; } 2.4rem = 24px
+
+Leia mais: https://snook.ca/archives/html_and_css/font-size-with-rem
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: black;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+submit {
+    border: none;
+    background-color: inherit;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html,
+body,
+#root,
+#root > div {
+    width: 100%;
+    background-color:#EDF2F7;
+}
+
+html,
+body,
+#root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
